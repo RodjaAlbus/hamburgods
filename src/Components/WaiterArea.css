@@ -1,0 +1,62 @@
+.waiterArea {
+   height: 100%;
+   width: 52.5%;
+   display: flex;
+   flex-direction: row;
+}
+
+.waiter {
+    position: absolute;
+    background-color: #2C5AFF;
+   /* border-radius: 100%;
+   Lo estamos usando de guia*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 100%;
+}
+
+.tables {
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.table {
+    background-color: #BFBDBD;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+    margin: 20px;
+    border: black solid 5px;
+    filter: drop-shadow(0 16px 4px rgba(0, 0, 0, 0.215));
+}
+
+.hallway {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hallButtons {
+    position: relative;
+    border-radius: 30%;
+    border: black dotted 5px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: #FFC700;
+    margin: 10px 0 100% 0;
+}
+
+.hallImages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+

@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Header, Footer } from "./Components/Main";
+import { WaiterArea } from "./Components/WaiterArea";
+import { KitchenArea } from "./Components/KitchenArea";
+import "./Components/style.css";
 
 function App() {
+  const [money, setMoney] = useState("$280,000");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <Header />
+      <div className="gameArea">
+        <WaiterArea />
+        <KitchenArea />
+      </div>
+      <Footer money={money} />
+    </body>
   );
 }
 
